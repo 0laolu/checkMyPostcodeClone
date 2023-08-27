@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html {
+    font-size: 16px;
+}
+
+.header {
+    padding: 0.8rem;
+    border: 1px solid limegreen;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.search-input {
+    /* border: 1px solid red; */
+    width: 20%;
+    /* min-width: 405px; */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+.student-id-links {
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li{
+    display: inline-block;
+}
+
+.check-student-id {
+    width: 70%;
+    /* border: 1px solid salmon; */
+    margin: 0 auto 3rem auto;
+}
+
+.check-student-id h1 {
+    padding: 1.5rem 0;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.check-student-id__search-container {
+    border: 1px solid salmon;
+    padding: 1rem;
+}
+
+.check-student-id__search-container input {
+    width: 80%;
+    padding: 1rem 0.4rem;
+}
+
+.search-button, .locate-me-button {
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 1.3rem;
+    width: 12%;
+    min-width: 150px;
+    padding: 1.5rem 0;
+    outline: none;
+    border: none;
+}
+
+.search-button {
+    margin-left: 2rem;
+}
+
+.location-option {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+.check-student-id__search-container p {
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+.locate-me-button {
+    margin-left: 3rem;
+    width: 15%;
+}
+
+/* booking */
+.booking-section {
+    padding: 1rem 0;
+    width: 64%;
+    margin: 0 auto 8rem auto;
+}
+
+.available-booking-option {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.booking-logo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+
+.available-booking-option input {
+    outline: none;
+    padding: 1rem 0.3rem;
+}
+
+.booking-dates {
+    display: flex;
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+.booking-dates input {
+    width: 50%;
+}
+
+.booking-buttons {
+    /* border: 1px solid lime; */
+    display: flex;
+    width: 30%;
+}
+
+.booking-buttons button {
+    width: 100%;
+    padding: 1rem 0;
+    margin-left: 0.7rem;
+}
+
+.booking-places-container {
+    width: 70%;
+    padding: 0.3rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-image {
+    width: 24%;
+    padding: 0.4rem;
+    position: relative;
+    border-radius: 3px;
+}
+
+.city-image.trondheim {
+    background-image: url("https://cf.bstatic.com/xdata/images/city/max300/740935.webp?k=d90fa40b53bd16d8d06214496648ebbbccb96cff3946793c569e50103d363ec1&amp;o=");
+    background-size: contain;
+}
+
+.city-image.sixt {
+    background-image: url("https://cf.bstatic.com/xdata/images/city/max300/844107.webp?k=d2e327bd37d6b8a5e3b3f8f0a4c218387781b80dbbd5adb2d9e56d10f46c1659&amp;o=");
+    background-size: contain;
+}
+
+.city-image.bransgore {
+    background-image: url("https://cf.bstatic.com/xdata/images/city/max300/879409.webp?k=5ae0075dd2c4eb38ba197d88f436067ab78e7701b55ba1ab6699fdce795425ca&amp;o=");
+    background-size: contain;
+}
+
+.city-label {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    width: 75%;
+    min-width: 150px;
+    padding: 0.3rem ;
+}
+
+.city-label h4 {
+    font-size: 1.3rem;
+}
+
+.city-label span {
+    position: relative;
+    top: 0.1rem;
+}
+
+.city-label p {
+    font-size: 1.1rem;
+}
+
+.city-image figcaption {
+    color: #989898;
+    font-size: 0.9rem;
+    position: absolute;
+    right: 0;
+    bottom: -1.5rem;
+}
+
+.city-list {
+    background-color: #edf1f6;
+    color: #17498e;
+    margin-left: 0.7rem;
+    width: 24%;
+    position: relative;
+}
+
+.city-list li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+
+.city-list li span.from {
+    font-size: 0.9rem;
+    color: #989898;
+    position: absolute;
+    right: 0.3rem;
+}
+
+.city-list button {
+    background-color: cornflowerblue;
+    color: white;
+    position: absolute;
+    width: 60%;
+    padding: 0.9rem 0;
+    bottom: -3.5rem;
+    border: none;
+}
+
+/* popular postcodes */
+
+.popular-student-id {
+    width: 70%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-student-id h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.popular-student-id p {
+    display: inline-block;
+    font-size: 1.2rem;
+    border: 1px solid lightgrey;
+    padding: 0.5rem 0;
+    margin: 0.2rem 0.5rem;
+    min-width: 150px;
+    text-align: center;
+}
+
+.popular-student-id p.large {
+    font-size: 2rem;
+    margin: 0.2rem;
+    padding: 0.5rem 0.3rem;
+}
+
+/* page description */
+.page-description {
+    font-size: 1.3rem;
+    width: 72%;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0 auto 4rem auto;
+    line-height: 2.5;
+    border: 1px solid lightgrey;
+}
+
+.page-description .bold-text {
+    font-weight: 900;
+}
+
+/* footer section */
+.top-footer {
+    border: 1px solid black;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.bottom-footer {
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.bottom-footer p,
+.bottom-footer aside {
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.bottom-footer .blue-text {
+    color: cornflowerblue;
+    
+}
+
+
+
