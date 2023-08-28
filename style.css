@@ -129,36 +129,71 @@ html {
 }
 
 .booking-logo {
+    color: midnightblue;
     font-size: 1.4rem;
     font-weight: 900;
     margin-right: 0.5rem;
 }
 
+.booking-logo span {
+    color: #008CBA;
+}
+
+.booking-background {
+    background: -webkit-linear-gradient(top,#ffca56 0,#ffbb39 100%);
+    display: flex;
+    padding: 0.25rem;
+    padding-right: 0.6rem;
+    border-radius: 2px;
+}
+
 .available-booking-option input {
     outline: none;
-    padding: 1rem 0.3rem;
+    padding: 0.8rem 0.3rem;
+    border: 1px inset lightgrey;
 }
 
 .booking-dates {
     display: flex;
     width: 40%;
+    margin: 0 0.3rem;
     /* border: 1px solid red; */
 }
 
 .booking-dates input {
     width: 50%;
+    border: 1px inset lightgrey;
+}
+
+.booking-dates input::placeholder {
+    color: #0896ff;
+    font-weight: 500;
 }
 
 .booking-buttons {
-    /* border: 1px solid lime; */
     display: flex;
+    /* justify-content: spa; */
     width: 30%;
+    border: none;
 }
 
 .booking-buttons button {
+    background-color: transparent;
     width: 100%;
-    padding: 1rem 0;
-    margin-left: 0.7rem;
+    padding: 0.8rem 0;
+    border: none;
+}
+
+.booking-buttons button.search {
+    background-color: #0896ff;
+    color: white;
+    border: 1px solid white;
+}
+
+.booking-buttons button.guest {
+    color: #c9960c;
+    margin-left: 0.5rem;
+    border: 1px outset white;
 }
 
 .booking-places-container {
@@ -243,13 +278,13 @@ html {
 }
 
 .city-list button {
-    background-color: cornflowerblue;
+    background-color: #0896ff;
     color: white;
     position: absolute;
-    width: 60%;
-    padding: 0.9rem 0;
-    bottom: -3.5rem;
-    border: none;
+    width: 100%;
+    padding: 0.5rem 0;
+    bottom: -2.7rem;
+    border: 1px outset white;
 }
 
 /* popular postcodes */
