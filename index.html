@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/be84db8335.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Check My Student ID</title>
 </head>
@@ -15,7 +15,7 @@
     <header class="header">
         <nav class="nav-bar">
             <figure class="home-logo">
-                <img src="" alt="home">
+                <i class="fa-solid fa-house"></i>
             </figure>
 
             <div class="search-input">
@@ -25,13 +25,26 @@
 
             <ul class="nav-links">
                 <div class="student-id-links">
-                    <li>Student Id Lists</li>
-                    <li>Student Id Maps</li>
+                    <li class="dropdown list">Student Id Lists <i class="fa-solid fa-caret-down"></i></li>
+                        <div class="dropdown-container list">
+                            <p>By County</p>
+                            <p>By Introduction Date</p>
+                        </div>
+                    <li class="dropdown map">Student Id Maps <i class="fa-solid fa-caret-down"></i></li>
+                        <div class="dropdown-container map">
+                            <p>User Type</p>
+                            <p>Use Category</p>
+                            <p>Council Tax Band</p>
+                        </div>
                     <li>Nearest Student Ids</li>
                     <li>Student Id Lottery</li>
                 </div>
                 <div class="help-and-info-link">
-                    <li>Help and Information</li>
+                    <li class="dropdown help">Help and Information <i class="fa-solid fa-caret-down"></i></li>
+                        <div class="dropdown-container help">
+                            <p>About this website</p>
+                            <p>Privacy Policy</p>
+                        </div>
                 </div>
             </ul>
         </nav>
